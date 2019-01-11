@@ -1,0 +1,294 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="55d8c928-8e48-4fa1-ab52-cc75e73d9faf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works DW2016 EXT</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Internet Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6c9b6c49-980a-434f-b8ae-3fc9e7dbae35">
+          <ID>Internet Sales</ID>
+          <Name>Internet Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4314e9e7-9492-47a2-a577-b30d4d2010ab">
+            <DataSourceViewID>Adventure Works DW2016 EXT</DataSourceViewID>
+            <TableID>dbo_FactInternetSales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2018-12-08T19:40:30.996667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-12-08T19:40:30.996667Z</LastSchemaUpdate>
+          <EstimatedRows>5</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Order Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week Number Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Number Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Date Alternate Key</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Customer</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer Key</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Geography Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Last Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>First Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Birth Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Marital Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Email Address</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Yearly Income</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Total Children</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Number Children At Home</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Education</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Occupation</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>House Owner Flag</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Number Cars Owned</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Address Line1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Phone</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Commute Distance</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Country Region Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>State Province Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>State Province Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Postal Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Name</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Due Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week Number Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Number Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Date Alternate Key</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Ship Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week Number Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Number Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Date Alternate Key</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Product</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product Key</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Product Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight Unit Measure Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size Unit Measure Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Line</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dealer Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Class</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Style</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Model Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Description</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Days To Manufacture</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Finance</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="77e897ea-c2d9-437e-844a-d8b6200ac2b4">
+          <ID>Finance</ID>
+          <Name>Finance</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="65b6b38b-eaa7-49ee-b64c-5db31e239e61">
+            <DataSourceViewID>Adventure Works DW2016 EXT</DataSourceViewID>
+            <TableID>dbo_FactFinance</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -4,22 +4,23 @@
     <MeasureGroup>
       <ID>Internet Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="6c9b6c49-980a-434f-b8ae-3fc9e7dbae35">
-          <ID>Internet Sales</ID>
-          <Name>Internet Sales</Name>
+        <Partition dwd:design-time-name="d8dfce83-9bf5-4220-be1e-0d7358fd8064">
+          <ID>Fact Internet Sales1</ID>
+          <Name>Fact Internet Sales1</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4314e9e7-9492-47a2-a577-b30d4d2010ab">
-            <DataSourceViewID>Adventure Works DW2016 EXT</DataSourceViewID>
-            <TableID>dbo_FactInternetSales</TableID>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="1ba33341-bf17-44f8-9563-5a5af619fd5c">
+            <DataSourceID>Adventure Works DW2016 EXT</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactInternetSales].[ProductKey],[dbo].[FactInternetSales].[OrderDateKey],[dbo].[FactInternetSales].[DueDateKey],[dbo].[FactInternetSales].[ShipDateKey],[dbo].[FactInternetSales].[CustomerKey],[dbo].[FactInternetSales].[PromotionKey],[dbo].[FactInternetSales].[CurrencyKey],[dbo].[FactInternetSales].[SalesTerritoryKey],[dbo].[FactInternetSales].[SalesOrderNumber],[dbo].[FactInternetSales].[SalesOrderLineNumber],[dbo].[FactInternetSales].[RevisionNumber],[dbo].[FactInternetSales].[OrderQuantity],[dbo].[FactInternetSales].[UnitPrice],[dbo].[FactInternetSales].[ExtendedAmount],[dbo].[FactInternetSales].[UnitPriceDiscountPct],[dbo].[FactInternetSales].[DiscountAmount],[dbo].[FactInternetSales].[ProductStandardCost],[dbo].[FactInternetSales].[TotalProductCost],[dbo].[FactInternetSales].[SalesAmount],[dbo].[FactInternetSales].[TaxAmt],[dbo].[FactInternetSales].[Freight],[dbo].[FactInternetSales].[CarrierTrackingNumber],[dbo].[FactInternetSales].[CustomerPONumber],[dbo].[FactInternetSales].[OrderDate],[dbo].[FactInternetSales].[DueDate],[dbo].[FactInternetSales].[ShipDate]
+FROM [dbo].[FactInternetSales]
+WHERE
+orderdatekey &gt;= 915</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <EstimatedRows>5</EstimatedRows>
-          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
       <AggregationDesigns>

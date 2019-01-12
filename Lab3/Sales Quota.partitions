@@ -4,14 +4,14 @@
     <MeasureGroup>
       <ID>Sales Quota</ID>
       <Partitions>
-        <Partition dwd:design-time-name="da2cfcb1-cd45-451b-bff7-45947f697189">
-          <ID>Sales Quota</ID>
-          <Name>Sales Quota</Name>
+        <Partition dwd:design-time-name="9dccc990-5b80-4062-8f11-27e1008cb7a5">
+          <ID>Fact Sales Quota</ID>
+          <Name>Fact Sales Quota</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a18b26dc-0635-4f53-baf9-8b0a3e4c39bb">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d7490599-1633-41df-932e-e99017559dfa">
             <DataSourceViewID>Adventure Works DW2016 EXT</DataSourceViewID>
             <TableID>dbo_FactSalesQuota</TableID>
           </Source>
